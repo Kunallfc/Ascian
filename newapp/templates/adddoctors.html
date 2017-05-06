@@ -1,0 +1,95 @@
+{% load static %}
+<html>
+<head>
+<h1><center>	Add Doctors To Our List  </h1></center>
+</head>
+<body>
+
+<div id = "hm" style="font-size:35px; float:left">
+<center>
+Name
+<br>
+<input type ="text" id='name'></input><br><br>
+Location
+<br>
+<input type ="text" id='location'></input>
+<br>
+Speciality
+<br>
+<select name="selector" id='selector'><br>
+    <option value="ENT">ENT</option>
+    <option value="Skin">SKIN</option>
+    <option value="Surgeons">Surgeons</option>
+    <option value="Dentist">Dentist</option>
+    <option value="cardiologist">Cardiologist</option>
+    <option value="Neurologist">Neurologist</option>
+    <option value="Urologist">Urologist</option>
+    <option value="Radiologist">Radiologist</option>
+  </select>
+
+
+
+
+
+<br>
+StartTime
+
+<br>
+<select name="st_time" id='st_time'>
+    <option value="9:00">9:00</option>
+    <option value="10:00">10:00</option>
+    <option value="11:00">11:00</option>
+    <option value="12:00">12:00</option>
+    <option value="13:00">13:00</option>
+    <option value="14:00">14:00</option>
+    <option value="15:00">15:00</option>
+    <option value="16:00">16:00</option>
+  </select>
+
+<br>
+
+EndTime
+<br>
+<select name="end_time" id='end_time'>
+    
+    <option value="10:00">10:00</option>
+    <option value="11:00">11:00</option>
+    <option value="12:00">12:00</option>
+    <option value="13:00">13:00</option>
+    <option value="14:00">14:00</option>
+    <option value="15:00">15:00</option>
+    <option value="16:00">16:00</option>
+    <option value="17:00">17:00</option>
+
+  </select>
+
+
+
+
+
+
+<br>
+
+
+<button id="sub">Submit Details</button>
+
+<center>
+</div>
+
+
+<div id="mh" style="float:right">
+
+<button id='all'>View Our Doctors</button>
+
+<button id='search'>Search Doctors</button>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src='{% static "js/add.js" %}'></script>
+<body background="http://wallpapercave.com/wp/cj7NxVa.jpg">
+
+</body>
+
+</html>

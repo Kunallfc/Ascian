@@ -1,0 +1,48 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static "css/table.css" %}"/>
+<center>
+<h1>Our Doctors</h1>
+
+<h2>Your Health is our Concern</h2>
+
+</center>
+</head>	
+
+<body>
+
+
+<center>
+<table id = 'my' border="5">
+ 			<tr>
+ 				
+ 				<th>Name</th> 				
+ 				<th>Speciality</th>
+ 				<th>Location</th>
+ 				<th>From</th>
+ 				<th>To</th>
+ 			</tr>
+ 			{% for dx in all_data %}
+ 			<tr>
+ 				
+
+ 				<td>{{ dx.name }}</td>
+ 				<td>{{ dx.speciality }}</td>
+ 				<td>{{ dx.location }}</td>
+                <td>{{ dx.s_timings }}</td>
+                <td>{{ dx.e_timings }}</td>
+                                
+
+
+ 			</tr>
+ 			{% endfor %}
+ 		</table>
+
+
+</center>
+<body background="https://d1yn1kh78jj1rr.cloudfront.net/preview/cartoon-vector-nurse-and-doctor-carrying-the-patient_z11OtJOd_M.jpg">
+</body>
+</html>
+
+
